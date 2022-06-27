@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+body{
+	background-color: #252525;
+}
+
+.bg-image{
+	position: relative;
+	padding-top: 130px;
+
+	img{
+		position: absolute;
+		z-index: -1;
+		top: 0px;
+		height: 250px;
+		width: 100%;
+	}
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p{
+	margin: 0px;
+}
+input, button{
+	border: none;
+}
+input:focus{
+	outline: none;
+}
+
+.title{
+	font-size: 26px;
+	font-weight: 600;
+}
+
+.nav-bar{
+	background-color: #7B2506;
+
+	.title{
+		color: white;
+	}
+}
+
+.cart-ui{
+	cursor: pointer;
+	color: white;
+	background-color: #421606;
+	padding: 10px 30px;
+	border-radius: 25px;
+	
+	p, span{
+		font-weight: 600;
+	}
+
+	span{
+		background-color: #7B2506;
+		padding: 1px 13px;
+		border-radius: 12px;
+	}
+}
+
+.cart-modal{
+
+	.cart-modal-item{
+		border-bottom: 1px solid #7B2506;
+	}
+	.modal-inner{
+		width: 130px;
+	}
+	.modal-title{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.modal-price{
+		color: #b55f1d;
+		font-weight: 700;
+	}
+	.modal-amount{
+		font-size: 14px;
+		box-shadow: 0px 0px 2px gray;
+		border-radius: 5px;
+		width: 40px;
+		padding-top: 1px;
+		text-align: center;
+	}
+	.modal-btn{
+		border: 1px solid #7B2506;
+		border-radius: 5px;
+		color: #7B2506;
+		font-weight: 600;
+		font-size: 17px;
+		background-color: white;
+		padding: 2px 15px;
+		margin-left: 10px;
+		
+		&:hover{
+			background-color: #7B2506;
+			color: white;
+		}
+	}
+	.main-btn{
+		border: 1px solid #7B2506;
+		border-radius: 20px;
+		color: #7B2506;
+		font-size: 15px;
+		background-color: white;
+		padding: 4px 25px 5px;
+		margin-left: 10px;
+
+		&.active{
+			background-color: #7B2506;
+			color: white;
+		}
+	}
+}
+
+.food-list{
+	background-color: white;
+	max-width: 800px;
+}
+
+.food-item{
+	&:not(:last-of-type){
+		border-bottom: 1px solid rgb(227, 227, 227);
+	}
+
+	.food-title{
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.food-description{
+		font-style: italic;
+		font-size: 14px;
+		opacity: 0.8;
+	}
+	.food-price{
+		font-weight: bold;
+		color: #b55f1d;
+		font-size: 16px;
+	}
+	button{
+		color: white;
+		background-color: #7B2506;
+		font-weight: 500;
+		padding: 3px 25px;
+		border-radius: 15px;
+	}
+	input{
+		text-align: center;
+		padding: 2px 5px;
+		border-radius: 6px;
+		width: 40px;
+		box-shadow: 0px 0px 2px rgb(160, 160, 160);
+	}
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none; 
+	}
+	input[type=number]{
+		-moz-appearance: textfield;
+	}
+}
+
+.home{
+	.b-rad{
+		border-radius: 10px;
+	}
+	.section-1{
+		background-color: #313131;
+		color: white;
+		max-width: 600px;
+	}
+	p{
+		font-size: 15px;
+	}
+}

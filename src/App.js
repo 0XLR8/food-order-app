@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/layout/Navbar";
+import Home from "./components/routes/Home";
+import Logo from "./assets/images/food-table.png";
+import { CartProvider } from "./context/CartContext";
+import CartModal from "./components/cart/CartModal";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return(
+        <CartProvider>
+            <Navbar />
+            <div className="bg-image">
+                <img src={Logo} alt="food" />
+                <Home />
+            </div>
+            <CartModal />
+        </CartProvider>
+    )
 }
-
 export default App;
